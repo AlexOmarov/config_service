@@ -14,7 +14,7 @@ COPY known_hosts /home/dwd/.ssh/known_hosts
 
 USER dwd:dwd
 VOLUME /tmp
-EXPOSE 8080
+EXPOSE 8888
 
 ARG DEPENDENCY=build/deps
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
